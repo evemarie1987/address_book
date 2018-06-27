@@ -1,0 +1,66 @@
+body {
+	background-color: #F3ECD4;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+main {
+	max-width: 1000px;
+	padding: 0 15px;
+	margin: 60px auto;
+}
+
+
+h1 {
+	color: #194359;
+}
+
+a {
+	color: #00968B;
+	text-decoration: none;
+}
+a:hover, a:focus {
+	color: #cc6600;
+}
+a:visited, a:active {
+	color: #00968B;
+}
+
+h3 {
+	font-weight: normal;
+}
+
+#contact-form ul {
+	list-style: none;
+	padding: 0;
+}
+
+#contact-form label {
+	color: #00968B;
+	width: 10%;
+	text-align: right;
+	display: inline-block;
+}
+
+.btn { 
+	background-color: #ccc;
+	color: #000;
+	border: 1px solid #999;
+	border-radius: 2px;
+	padding: 3px 6px;
+}
+.btn:visited {
+	color: #000;
+}
+.btn:hover, .btn:focus, .btn:active {
+	color: #000;
+	box-shadow: 1px 1px 2px 2px #bbb inset;
+}
+
+main div {
+	padding: 10px 0;
+}
+
+.address, #contact-form {
+	display: none;
+}

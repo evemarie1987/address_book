@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Carnet d'adresses</title>
+
+  	<!-- Polices -->
+  	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  	
+  	<!-- Feuilles CSS -->
+  	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+  	<!-- Librairie jQuery -->
+  	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+  	<!-- Scripts JS -->
+  	<script src="js/utilities.js"></script>
+  	<script src="js/address.js"></script>
+</head>
+<body>
+
+	<main>
+		<h1><i class="fa fa-book"></i> Carnet d'adresse</h1>
+		
+		<section class="content">
+			<ul>
+				
+			</ul>	
+		</section>
+		
+		<section class="address">
+			<h3></h3>
+			<p></p>
+			<a href="#" id="edit" contactId=''>Editer ce contact</a>
+
+		</section>
+
+		<div>
+			<a href="#" class="btn" id="add"><i class="fa fa-plus"></i></a>
+			<a href="#" class="btn" id="reset"><i class="fa fa-trash-o"></i></a>	
+		</div>
+		
+
+		<form id="contact-form" data-mode="add">
+        <ul>
+            <li>
+                <label for="title">Civilité :</label>
+                <select id="title" name="title">
+                    <option value=1>Madame</option>
+                    <option value=2>Mademoiselle</option>
+                    <option value=3>Monsieur</option>
+                </select>
+            </li>
+            <li>
+                <label for="lastName">Nom :</label>
+                <input id="lastName" type="text" name="lastName">
+            </li>
+            <li>
+                <label for="firstName">Prénom :</label>
+                <input id="firstName" type="text" name="firstName">
+            </li>
+            <li>
+                <label for="phone">Téléphone :</label>
+                <input id="phone" type="text" name="phone" maxlength="10">
+            </li>
+            <li>
+                <input type="button" id="save-contact" value="Enregistrer">
+            </li>
+        </ul>
+    </form>
+	</main>
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
